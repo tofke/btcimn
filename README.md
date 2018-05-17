@@ -1,6 +1,6 @@
 # Bitcoin Incognito (BTCi) masternode install script
 ## Use this script on a fresh install of Ubuntu 16.04 (x64)
-(this is a simplified version, manage your memory & firewall settings as you need)
+This is a simplified version, manage your memory & firewall settings as you need ...
 
 Stable and cheap VPS hosts here : https://www.scaleway.com/
 
@@ -27,10 +27,10 @@ My BTCi address if this helped you and you consider a donation : B5riAb43z9i3CEV
 11. Move to Part 2 for now
 
 # Part 2 - Getting your Linux VPS Started Up 
-##(Read all instructions and follow prompts closely)
+##Read all instructions and follow prompts closely !
 
 1. Connect to your linux VPS, then copy and paste the following to get started :
-##NOTE : do NOT run software as ROOT, this script will create a dedicated user for it !
+<p><B>NOTE : do NOT run software as ROOT</B>, this script will create a dedicated user for it !
 ```
 sudo apt install git && git clone https://github.com/tofke/btcimn.git && cd btcimn && chmod -c u+x install.sh && ./install.sh
 ```
