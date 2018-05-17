@@ -47,6 +47,11 @@ To have it started automatically after reboot, add this line in btci's crontab :
 ```
 @reboot /usr/local/bin/btcid
 ```
+Reboot your server and check if everything goes well ... to get the number of blocks downloaded by your node, run : 
+```
+btci-cli getblockcount
+```
+Compare this number to the last block on http://explorer.bitcoinincognito.com/
 
 3. Move to Part 3
 
@@ -68,6 +73,7 @@ MN1 66.65.43.32:7250 87dfjnKNfdjNlwomdmKKMdkaNIE a3eofJJkdlMlfKokfmalmofO 0
 
 1. In your wallet, go to Tools -> Debug Console
 2. Enter ```startmasternode alias 0 <alias>``` with ```<alias>``` being the name of your masternode from Part 3
+(this file should also be updated on the Linux node, so that it can start automatically)
 3. Enjoy!  You can start this process over again for another MN on a fresh Linux VPS!
 
 # Feel free to consider a donation if this helped : 
