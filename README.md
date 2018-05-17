@@ -1,15 +1,15 @@
 # Bitcoin Incognito (BTCi) masternode install script
 ## Use this script on a fresh install of Ubuntu 16.04 (x64)
-(this is a simplified version, manage your memory & firewall settings as you need)
+###(this is a simplified version, manage your memory & firewall settings as you need)
 
 Stable and cheap VPS hosts here : https://www.scaleway.com/
 
 My BTCi address if this helped you and you consider a donation : B5riAb43z9i3CEVYBK9vjwN1nRF6UsJoze 
 (FYI, i don't have enough collateral to run my own BTCi masternode, but i have a few smaller ones)
 
-# This guide is meant for setting up a HOT/COLD SETUP WITH WINDOWS AND LINUX.
+## This guide is meant for setting up a HOT/COLD SETUP WITH WINDOWS AND LINUX.
 
-# Use this script on a fresh install of Ubuntu 16.04 - MUST BE x64
+## Use this script on a fresh install of Ubuntu 16.04 - MUST BE x64
 
 # Part 1 - Sending Collateral Coins
 
