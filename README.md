@@ -15,12 +15,16 @@ My BTCi address if this helped you and you consider a donation : B5riAb43z9i3CEV
 
 1. Open your Windows wallet - MAKE SURE IT IS SYNCED WITH THE NETWORK
 2. Go to Tools -> Debug Console
-3. Type: getaccountaddress somealiasname ("somealiasname" is your masternode's alias you want to use, for example : mn1)
+3. Type the following command, where "somealiasname" is your masternode's alias, for example mn1
+```
+getaccountaddress somealiasname 
+```
+#### The above command generates a new address for your masternode collateral
 4. Send 1500 BTCi to this address (mind the FEE ... depends on the exchange)
    For example, on Graviex, the fee usually is 0.002, so you have to send 1500.002 to have exactly 1500 in the end
 5. Wait a few minutes for the transaction to process, then go to Tools -> Debug Console
 6. Type: masternode outputs (This can take a minute before an output is shown)
-   This will show you the rtxid and index of the transaction. Take note of these for later.
+#### This will show you the rtxid and index of the transaction. Take note of these for later.
 7. Save your TX ID (The first number) and your Index Number (Second number, either a 1 or 0)
 8. Type: masternode genkey
 9. Save your generated key as well as this will be needed in your VPS as your private key

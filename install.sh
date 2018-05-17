@@ -80,5 +80,6 @@ To start btcid after a reboot, add this line to your crontab :
 Please move on to the ${RED}NEXT${NC} step.
 "
 EOF
+exit
 echo "A full log of this setup can be found in $MyLog "
 
