@@ -85,7 +85,8 @@ MN1 66.65.43.32:7250 87dfjnKNfdjNlwomdmKKMdkaNIE a3eofJJkdlMlfKokfmalmofO 0
 # Feel free to consider a donation if this helped : 
 BTCi : B5riAb43z9i3CEVYBK9vjwN1nRF6UsJoze
 
-*Official BTCi Discord: https://discord.gg/4YVntwG
+*Official BTCi Discord (masternode channel) : https://discord.gg/NRgMQHJ
+(you can find me there as "tof" and let me know if you have any issue with this script)
 
 # Recommended Tools
 
