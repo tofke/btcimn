@@ -27,16 +27,16 @@ My BTCi address if this helped you and you consider a donation : B5riAb43z9i3CEV
 11. Move to Part 2 for now
 
 # Part 2 - Getting your Linux VPS Started Up 
-## Read all instructions and follow prompts closely !
+## Read all instructions and follow prompts closely ...
+### NOTE : do NOT run software as ROOT, this script will create a dedicated user !
+(the installation script has to be executed by a priviledged user of course)
 
 1. Connect to your linux VPS, then copy and paste the following to get started :
-## NOTE : do NOT run software as ROOT, this script will create a dedicated user !
-(the installation script has to be executed by a priviledged user of course)
 ```
-sudo apt install git && git clone https://github.com/tofke/btcimn.git && cd btcimn && chmod -c u+x install.sh && ./install.sh
+sudo apt install git -y && git clone https://github.com/tofke/btcimn.git && cd btcimn && chmod -c u+x install.sh && ./install.sh
 ```
 2. follow the prompts closely and don't mess it up!
-## NOTE : this is where things get different from the initial script :
+### NOTE : this is where things get different from the initial script :
 A dedicated user named "btci" will be created after the software installation to run the node.
 
 To start the node, this user will just have to type "btcid".
