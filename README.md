@@ -53,6 +53,12 @@ btci-cli getblockcount
 ```
 Compare this number to the last block on http://explorer.bitcoinincognito.com/
 
+This command will tell you if the masternode runs : 
+```
+btci-cli masternode debug
+```
+Type "btci-cli help" to get more informations on cli options (otherwise use the wallet on your desktop to manage your node remotely).
+
 3. Move to Part 3
 
 # Part 3 - Editing your Windows Config File
