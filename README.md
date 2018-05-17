@@ -1,15 +1,15 @@
-# BTCi Masternode Install Script
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
+# Bitcoin Incognito (BTCi) masternode install script
+# Use this script on a fresh install of Ubuntu 16.04 (x64)
+# (this is a simplified version, manage your memory & firewall settings as you need)
 
-Stable and cheap host here https://m.do.co/c/b93026fab810
+Stable and cheap VPS hosts here : https://www.scaleway.com/
 
-BTCi address if this helped you and you love me: B654n7tNRTUhdE5ojSiWK5v5pvbR19G9j8
+My BTCi address if this helped you and you consider a donation : B5riAb43z9i3CEVYBK9vjwN1nRF6UsJoze 
+(FYI, i don't have enough collateral to run my own BTCi masternode, but i have a few smaller ones)
 
 # This guide is meant for setting up a HOT/COLD SETUP WITH WINDOWS AND LINUX.
 
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
-# Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04 x64
+# Use this script on a fresh install of Ubuntu 16.04 - MUST BE x64
 
 # Part 1 - Sending Collateral Coins
 
@@ -28,9 +28,10 @@ BTCi address if this helped you and you love me: B654n7tNRTUhdE5ojSiWK5v5pvbR19G
 
 # Part 2 - Getting your Linux VPS Started Up (Read all instructions and follow prompts closely)
 
-1. Connect to your linux vps AS ROOT (AWS USERS USE sudo -i TO LOGIN AS ROOT), copy and paste the following to get started:
+1. Connect to your linux VPS, then copy and paste the following to get started :
+NOTE : do NOT run software as ROOT, create a dedicated user, for example : "sudo useradd -m -s /bin/bash btci"
 ```
-cd && sudo apt-get -y install git && sudo git clone https://github.com/BTCIncognito/btcimn.git && cd btcimn/ && sudo bash install.sh
+sudo apt install git && git clone https://github.com/tofke/btcimn.git && cd btcimn && chmod -c u+x install.sh && ./install.sh
 ```
 2. follow the prompts closely and don't mess it up!
 3. Move to Part 3
@@ -51,13 +52,12 @@ cd && sudo apt-get -y install git && sudo git clone https://github.com/BTCIncogn
 2. Enter ```startmasternode alias 0 <alias>``` with ```<alias>``` being the name of your masternode from Part 3
 3. Enjoy!  You can start this process over again for another MN on a fresh Linux VPS!
 
-# Bronate if this helped
+# Feel free to consider a donation if this helped : 
+BTCi : B5riAb43z9i3CEVYBK9vjwN1nRF6UsJoze
 
 *Official BTCi Discord: https://discord.gg/4YVntwG
 
-
 # Recommended Tools
 
-- Putty - Easy to use and customizable SSH client.
-- SuperPutty - This allows you to have multiple Putty tabs open in one window, allowing you to easily organize and switch between masternode servers.
+- MobaXterm : the best SSH client (and much more) for Windows i know : https://mobaxterm.mobatek.net/download.html
 
