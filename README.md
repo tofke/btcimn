@@ -1,6 +1,6 @@
 # Bitcoin Incognito (BTCi) masternode install script
-# Use this script on a fresh install of Ubuntu 16.04 (x64)
-# (this is a simplified version, manage your memory & firewall settings as you need)
+## Use this script on a fresh install of Ubuntu 16.04 (x64)
+(this is a simplified version, manage your memory & firewall settings as you need)
 
 Stable and cheap VPS hosts here : https://www.scaleway.com/
 
