@@ -53,7 +53,33 @@ To have it started automatically after reboot, add this line in btci's crontab :
 ```
 @reboot /usr/local/bin/btcid
 ```
-Reboot your server and check if everything goes well ... to get the number of blocks downloaded by your node, run : 
+#### NOTE : adding a line to the crontab is done with this command : 
+```
+crontab -e
+```
+The "-e" option is for edit, to see if you have some lines in crontab just type "crontab -l" like this : 
+```
+tof@mn1:~$ crontab -l
+no crontab for tof
+```
+This example shows an empty crontab (a crontab basically is a task planification system). Get help on google if needed ... explaining these things goes beyond the scope of this documentation. If you use it for the first time, it will ask you to choose an editor (nano, mg or vi), for example : 
+```
+tof@mn1:~$ crontab -e
+no crontab for tof - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/mg
+  3. /usr/bin/vim.basic
+
+Choose 1-3 [1]:
+```
+It depends on your Linux experience, i personally use vi, so i type "3" to answer that question ... if you are a beginner, just hit enter.
+Remember that the script created a dedicated user to run BTCi, it's name is 'btci', so you'll have to connect back to that account : 
+```
+sudo su - btci
+```
+Check if everything goes well ... to get the number of blocks downloaded by your node, run : 
 ```
 btci-cli getblockcount
 ```
