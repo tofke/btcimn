@@ -82,13 +82,11 @@ To have btcid started after a reboot, this line was added to your crontab :
 (run 'crontab -e' and choose your favorite editor to change this)
 Please move on to the ${RED}NEXT${NC} step.
 "
-mkdir logs
-cp -v $MyLog logs
 exit
 EOF
 
 echo "
-A full log of this setup can be found in /home/btci/logs/install-btci_$now.log
+A full log of this setup can be found in $MyLog
 The BTCi daemon is started with the user btci ... 
 To connect as that user, type 'sudo su - btci'
 "
