@@ -5,7 +5,6 @@ This is a simplified version, manage your memory & firewall settings as you need
 Stable and cheap VPS hosts here : https://www.scaleway.com/
 
 My BTCi address if this helped you and you consider a donation : B5riAb43z9i3CEVYBK9vjwN1nRF6UsJoze 
-<p>(FYI, i don't have enough collateral to run my own BTCi masternode, but i have a few smaller ones)
 
 ## This guide is meant for setting up a "hot/cold" setup with Windows & Linux.
 
@@ -49,35 +48,25 @@ To start the node, this user will just have to type "btcid".
 
 To stop the node, btci would enter "btci-cli stop"
 
-To have it started automatically after reboot, add this line in btci's crontab : 
+To have it started automatically after reboot, this line has been added in btci's crontab : 
 ```
 @reboot /usr/local/bin/btcid
 ```
-#### NOTE : adding a line to the crontab is done with this command : 
-```
-crontab -e
-```
-The "-e" option is for edit, to see if you have some lines in crontab just type "crontab -l" like this : 
-```
-tof@mn1:~$ crontab -l
-no crontab for tof
-```
-This example shows an empty crontab (a crontab basically is a task planification system). Get help on google if needed ... explaining these things goes beyond the scope of this documentation. If you use it for the first time, it will ask you to choose an editor (nano, mg or vi), for example : 
-```
-tof@mn1:~$ crontab -e
-no crontab for tof - using an empty one
-
-Select an editor.  To change later, run 'select-editor'.
-  1. /bin/nano        <---- easiest
-  2. /usr/bin/mg
-  3. /usr/bin/vim.basic
-
-Choose 1-3 [1]:
-```
-It depends on your Linux experience, i personally use vi, so i type "3" to answer that question ... if you are a beginner, just hit enter.
-Remember that the script created a dedicated user to run BTCi, it's name is 'btci', so you'll have to connect back to that account : 
+#### NOTE : this user has no password, so you can not connect directly as 'btci'
+If you want to connect as btci, type this command as a priviledged user : 
 ```
 sudo su - btci
+```
+If you want to enable direct connection as btci, set a password for that user : 
+```
+sudo passwd btci
+```
+When entering the new password, there are no stars or dot or nothing displayed.
+```
+sudo passwd btci
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
 ```
 Check if everything goes well ... to get the number of blocks downloaded by your node, run : 
 ```
