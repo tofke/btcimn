@@ -53,7 +53,7 @@ sudo cp -v btci* $tmpdir|tee -a $MyLog
 echo -e "Creating a dedicated user to run BTCi : "|tee -a $MyLog
 sudo useradd -m -s /bin/bash btci && echo -e "${GREEN}btci${NC}"|tee -a $MyLog
 echo -e "Becoming user ${GREEN}btci${NC} to copy and run BTCi binaries : "|tee -a $MyLog
-sudo su - btci <<EOF|tee -a $MyLog
+sudo su - btci <<EOF
 mkdir bin
 cp -v $tmpdir/btci* bin
 echo -e "
@@ -82,7 +82,6 @@ To have btcid started after a reboot, this line was added to your crontab :
 (run 'crontab -e' and choose your favorite editor to change this)
 Please move on to the ${RED}NEXT${NC} step.
 "
-exit
 EOF
 
 echo "
