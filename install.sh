@@ -83,9 +83,9 @@ To have btcid started after a reboot, this line was added to your crontab :
 Please move on to the ${RED}NEXT${NC} step.
 "
 mkdir logs
-cp $MyLog logs
-exit
 EOF
+cp -v $MyLog logs
+exit
 
 echo "
 A full log of this setup can be found in /home/btci/logs/install-btci_$now.log
