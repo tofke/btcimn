@@ -48,6 +48,7 @@ libboost-thread1.58.0 libssl1.0.0 libminiupnpc10 libevent-2.0-5 libevent-pthread
 libevent-core-2.0-5 -y|tee -a $MyLog
 echo -ne "${GREEN}Copying binaries to $tmpdir : ${NC}"|tee -a $MyLog
 chmod -c a+x btci*|tee -a $MyLog
+chmod -c a+rx $tmpdir >> $MyLog
 sudo cp -v btci* $tmpdir|tee -a $MyLog
 echo -e "Creating a dedicated user to run BTCi : "|tee -a $MyLog
 sudo useradd -m -s /bin/bash btci && echo -e "${GREEN}btci${NC}"|tee -a $MyLog
@@ -63,12 +64,12 @@ echo "#Bitcoin Incognito (BTCi) configuration file
 rpcuser=$(pwgen -s 8 -1)
 rpcpassword=$(pwgen -s 32 -1)
 rpcallowip=127.0.0.1
-externalip$IP
+externalip=$IP
 daemon=1
 server=1
 listen=1
 masternode=1
-masternodeaddr$IP:7250
+masternodeaddr=$IP:7250
 masternodeprivkey=$KEY" > ~/.BTCi/btci.conf
 echo -e "${GREEN}STARTING THE DAEMON${NC}"
 btcid
