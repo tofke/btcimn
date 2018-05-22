@@ -32,7 +32,7 @@ sleep 3
 sudo apt-get update -y|tee -a $MyLog
 sudo apt-get upgrade -y|tee -a $MyLog
 sudo apt-get install curl pwgen -y|tee -a $MyLog
-IP==$(curl -s4 icanhazip.com)
+IP=$(curl -s4 icanhazip.com)
 echo " IP : $IP" >> $MyLog
 #dev tools NOT needed if you don't compile
 #sudo apt-get install wget nano unrar unzip -y
