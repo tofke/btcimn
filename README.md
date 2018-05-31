@@ -1,6 +1,9 @@
 # Bitcoin Incognito (BTCi) masternode install script
 ## Use this script on a fresh install of Ubuntu 16.04 (x64)
-This is a simplified version, manage your memory & firewall settings as you need ...
+This is a simplified version, manage your memory & firewall settings as you need.
+You can also check my VPS setup guide to have these things tuned before : https://github.com/tofke/VPS-for-MN (section 2. for swapfile creation)
+
+#### update : to get the lastest version (ticker XBI), see this guide : https://github.com/tofke/BTCi-mn-setup
 
 Stable and cheap VPS hosts here : https://www.scaleway.com/
 
